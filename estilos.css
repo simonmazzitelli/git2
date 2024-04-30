@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box; 
+   }
+   
+   :root{
+       --principal: #1AFFE5;
+       --secundario: #023932;
+       --acento:#c04a13;
+       --texto: #fff0ea;
+       --texto2: #000c0b;
+   
+   }
+   body{
+        margin: 0;
+       font-family: "Bebas Neue", sans-serif;
+       font-weight: bold;
+       font-style:oblique;
+       
+   
+   
+   }
+   header {
+    background-color: var(--principal);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+#bt-menu {
+display: none;
+
+}
+header label {
+display: none;
+width: 30px;
+height: 30px;
+padding: 10px;
+border-right: 1px solid white;
+
+}
+header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.menu li{
+    flex-grow: 1;
+}
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: fff;
+
+}
+.menu li:hover{
+    background: rgba(0,0,0,0.3);
+}
+@media (max-width: 768px) {
+
+    header label{
+        display: block;
+    }
+    .menu{ 
+        position: absolute;
+        background: #4e94ab ;
+        width: 70%;
+        margin-left: -70%;
+        top: 50px;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid white;
+    }
+    #bt-menu:checked ~ .menu{
+        margin: 0;
+
+    }
+
+
+
+}
+   .texto{
+    margin: 10px;
+       color:var(--texto);
+        font-family: "Roboto", sans-serif;
+        font-size: 1em;
+        font-style: light;
+   }
+   .titulo{
+        font-size: 4em;
+       text-align: center;
+       color: var(--secundario);
+   }
+   .slogan{
+    font-size: 1.5em;
+    text-align: center;
+    color: var(--acento);
+   }
+   
+   nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+a{
+    color: var();
+}
+a:hover{
+    color: var(--acento);
+}
+   
+   .item {
+       background-color: var(--secundario);
+       width: 100%;
+       max-width: 400px;
+       border: 1px solid var(--texto2);
+       margin: 10px auto;
+       padding: 10px;
+       display: flex;
+       flex-direction: column;
+   }
+   .imagenes{
+       display: block;
+       max-width: 350px;
+       width: 100%;
+       height: auto;
+       border-radius: 50%;
+       margin: 10px auto;
+   }
+   form {
+    font-size: 2em;
+    margin: 10px auto;
+    text-align: center; 
+    width: 100%;
+    max-width: 400px;
+    color: var(--acento);
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    box-sizing: border-box;
+
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid var(--texto2);
+    border-radius: 5px;
+}
+
+
+button {
+    background-color: var(--acento);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+footer {
+    background-color: var(--principal);
+    color: var(--acento);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.iconos  {
+    color: var(--acento);
+    margin-bottom: 20px;
+    font-size: 3em;
+    margin-right: 10px;
+
+}
+   @media screen and (min-width:768px){ 
+   .item{
+    align-items: center;
+       flex-direction: row;
+       max-width: 1000px ;
+   
+   }
+   }
